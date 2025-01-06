@@ -19,7 +19,7 @@ const Contact = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/msz/contact",
+        "https://portfolio-server-side-e91c.onrender.com/api/msz/contact",
         formData,
         {
           headers: {

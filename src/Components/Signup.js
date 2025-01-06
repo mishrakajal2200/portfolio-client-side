@@ -39,7 +39,7 @@ const Signup = ({ setAuthData }) => {
 
     
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/signup', formData);
+      const response = await axios.post('https://portfolio-server-side-e91c.onrender.com/api/auth/signup', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('username', response.data.username); // Save username to localStorage
       localStorage.setItem('fullName',response.data.fullName);

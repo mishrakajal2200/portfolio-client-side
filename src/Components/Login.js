@@ -32,7 +32,7 @@ const Login = ({ setAuthData }) => {
     setIsLoading(true);
    
     try {
-      const response = await axios.post('http://localhost:4000/api/auth/login', formData);
+      const response = await axios.post('https://portfolio-server-side-e91c.onrender.com/api/auth/login', formData);
 
       // Store token and username in localStorage
       localStorage.setItem('token', response.data.token);
