@@ -26,7 +26,7 @@ const projects = [
   ),
     image: "https://t3.ftcdn.net/jpg/00/96/97/90/240_F_96979048_Y3YBHNDut6fhtsf9TT97sU87aQDa10oQ.jpg",// Replace with actual project image
     githubLink: "https://github.com/mishrakajal2200?tab=repositories", // Replace with your GitHub link
-    demoLink: "https://stunning-entremet-21f36c.netlify.app", // Replace with your live demo link
+    demoLink: "https://jazzy-zabaione-b29249.netlify.app", // Replace with your live demo link
   },
 
   {

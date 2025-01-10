@@ -22,40 +22,7 @@ const Login = ({ setAuthData }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (formData.password.length < 6) {
-  //     toast.error('Password must be at least 6 characters long!');
-  //     return;
-  //   }
-
-  //   setIsLoading(true);
-   
-  //   try {
-  //     const response = await axios.post('https://portfolio-server-side-e91c.onrender.com/api/auth/login', formData);
-
-  //     // Store token and username in localStorage
-  //     localStorage.setItem('token', response.data.token);
-  //     localStorage.setItem('username', response.data.username);
-
-  //     // Optional: Set auth data in state
-  //     setAuthData({ token: response.data.token, username: response.data.username });
-
-  //     toast.success(`Welcome, ${response.data.username}!`);
-
-  //     // Delay navigation to give time for the toast message to appear
-      
-  //       navigate('/home');
-     
-  //   } catch (error) {
-  //     console.error('Error during login:', error.response?.data?.message || error.message);
-  //     toast.error(error.response?.data?.message || 'Error during login!');
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
   
