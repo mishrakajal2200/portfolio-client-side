@@ -162,9 +162,12 @@ const Login = ({ setAuthData }) => {
           </div>
         </form>
 
-        <p className="mt-3">
-          Don't Have An Account? <Link to="/signup" className="text-decoration-none">Sign Up</Link>
-        </p>
+        <p className="mt-3 d-flex justify-center align-items-center flex-wrap">
+  <span className="text-white mr-2">Don't Have An Account?</span>
+  <Link to="/signup" className="text-decoration-none text-success">
+    Sign Up
+  </Link>
+</p>
       </div>
     </div>
   );
