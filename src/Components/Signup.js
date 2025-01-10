@@ -203,7 +203,7 @@ const Signup = ({ setAuthData }) => {
         </form>
 
         <p className="mt-3 d-flex justify-center align-items-center flex-nowrap">
-  <span className="text-white mr-2">Already Have An Account?</span>
+  <span className="text-black mr-2">Already Have An Account?</span>
   <Link to="/login" className="text-decoration-none text-success">
     Sign In
   </Link>
