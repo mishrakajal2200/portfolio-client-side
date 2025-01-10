@@ -7,6 +7,7 @@ import personalImage from "./kajal.jpg";
 import neonCircle from "./kajal2.png"; // Import neon circle image
 
 function Home() {
+  
   const textAnimation = {
     hidden: { opacity: 0, x: -50 },
     visible: {

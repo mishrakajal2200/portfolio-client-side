@@ -10,6 +10,7 @@ import './login.css';
 
 const Login = ({ setAuthData }) => {
   const navigate = useNavigate();
+  
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -21,40 +22,80 @@ const Login = ({ setAuthData }) => {
     setFormData({ ...formData, [name]: value });
   };
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   if (formData.password.length < 6) {
+  //     toast.error('Password must be at least 6 characters long!');
+  //     return;
+  //   }
+
+  //   setIsLoading(true);
+   
+  //   try {
+  //     const response = await axios.post('https://portfolio-server-side-e91c.onrender.com/api/auth/login', formData);
+
+  //     // Store token and username in localStorage
+  //     localStorage.setItem('token', response.data.token);
+  //     localStorage.setItem('username', response.data.username);
+
+  //     // Optional: Set auth data in state
+  //     setAuthData({ token: response.data.token, username: response.data.username });
+
+  //     toast.success(`Welcome, ${response.data.username}!`);
+
+  //     // Delay navigation to give time for the toast message to appear
+      
+  //       navigate('/home');
+     
+  //   } catch (error) {
+  //     console.error('Error during login:', error.response?.data?.message || error.message);
+  //     toast.error(error.response?.data?.message || 'Error during login!');
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (formData.password.length < 6) {
       toast.error('Password must be at least 6 characters long!');
       return;
     }
-
+  
     setIsLoading(true);
-   
+  
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000); // Timeout after 5 seconds
+  
     try {
-      const response = await axios.post('https://portfolio-server-side-e91c.onrender.com/api/auth/login', formData);
-
-      // Store token and username in localStorage
+      const response = await axios.post(
+        'https://portfolio-server-side-e91c.onrender.com/api/auth/login',
+        formData,
+        { signal: controller.signal }
+      );
+  
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('username', response.data.username);
-
-      // Optional: Set auth data in state
+  
       setAuthData({ token: response.data.token, username: response.data.username });
-
+  
       toast.success(`Welcome, ${response.data.username}!`);
-
-      // Delay navigation to give time for the toast message to appear
-      
-        navigate('/home');
-     
+      navigate('/home');
     } catch (error) {
-      console.error('Error during login:', error.response?.data?.message || error.message);
-      toast.error(error.response?.data?.message || 'Error during login!');
+      if (error.name === 'AbortError') {
+        toast.error('Request timed out! Please try again later.');
+      } else {
+        console.error('Error during login:', error.response?.data?.message || error.message);
+        toast.error(error.response?.data?.message || 'Error during login!');
+      }
     } finally {
+      clearTimeout(timeout);
       setIsLoading(false);
     }
   };
-
+  
   return (
     <div className="login-page d-flex justify-content-center align-items-center">
       <ToastContainer position="top-right" />
