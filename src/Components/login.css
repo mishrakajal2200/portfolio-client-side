@@ -12,6 +12,6 @@
 
 @media (max-width: 768px) {
     .login-page {
-      background-attachment: fixed; /* Prevent issues on small screens */
+      background-attachment: scroll; /* Prevent issues on small screens */
     }
   }
