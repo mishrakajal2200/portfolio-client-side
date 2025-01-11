@@ -8,10 +8,13 @@
     background-position: center; 
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: auto;
 }
 
 @media (max-width: 768px) {
     .login-page {
-      background-attachment: scroll; /* Prevent issues on small screens */
+      background-attachment: fixed; /* Prevent issues on small screens */
+      background-size: cover; 
+      background-position: center; 
     }
   }
