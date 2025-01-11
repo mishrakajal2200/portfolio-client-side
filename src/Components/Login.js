@@ -39,7 +39,7 @@ const Login = ({ setAuthData }) => {
     try {
       const response = await axios.post(
         'https://portfolio-server-side-e91c.onrender.com/api/auth/login',
-        formData,{ timeout: 1000 },
+        formData,{ timeout: 3000 },
         { signal: controller.signal }
       );
   
