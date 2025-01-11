@@ -9,3 +9,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+@media (max-width: 768px) {
+    .login-page {
+      background-attachment: scroll; /* Prevent issues on small screens */
+    }
+  }

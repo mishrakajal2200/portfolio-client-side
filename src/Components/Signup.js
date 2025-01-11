@@ -76,7 +76,7 @@ const Signup = ({ setAuthData }) => {
     try {
       const response = await axios.post(
         'https://portfolio-server-side-e91c.onrender.com/api/auth/signup',
-        formData
+        formData, { timeout: 1000 }
       );
       
       // Store token and username in localStorage
