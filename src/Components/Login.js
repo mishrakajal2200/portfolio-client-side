@@ -64,7 +64,7 @@ const Login = ({ setAuthData }) => {
   };
   
   return (
-    <div className="login-page d-flex justify-content-center align-items-center">
+    <div className="login-page d-flex justify-content-center align-items-start">
       <ToastContainer position="top-right" />
       <div className="bg-white shadow-lg p-3 px-5 rounded col-lg-4 col-sm-6 col-md-6 col-10 mt-5">
         <div className="justify-content-center align-items-center d-flex">
