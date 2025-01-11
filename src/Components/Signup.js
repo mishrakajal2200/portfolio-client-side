@@ -98,9 +98,9 @@ const Signup = ({ setAuthData }) => {
   };
 
   return (
-    <div className="signup-page d-flex justify-content-center mt-4">
+    <div className="signup-page d-flex justify-content-center align-items-center">
       <ToastContainer position="top-right" />
-      <div className="bg-white shadow-lg p-3 px-5 rounded col-lg-4 col-sm-6 col-md-6 col-10 mt-5 align-items-center">
+      <div className="bg-white shadow-lg p-3 px-5 rounded col-lg-4 col-sm-6 col-md-6 col-10 mt-5">
         <div className="justify-content-center align-items-center d-flex">
           <img
             src="https://cdn4.iconfinder.com/data/icons/ui-3d-01-of-3/100/UI_26-512.png"
