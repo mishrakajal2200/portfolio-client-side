@@ -58,22 +58,23 @@ const projects = [
     description: (
       <>
         <ul className="text-start lh-sm">
+        <p className="project-status text-danger text-center">🚧 Currently under development. Stay tuned for updates!</p>
           A real-time Chat Application built with MongoDB, Express, React, TailwindCSS, and Node.js. Key features:
           <li>
             <strong style={{ color: "orange" }}>Real-time Messaging</strong>: Instantly send and receive messages with WebSockets.
           </li>
-          <li>
+          {/* <li>
             <strong style={{ color: "red" }}>User Authentication</strong>: Secure login and signup with JWT authentication.
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <strong style={{ color: "blue" }}>Responsive Design</strong>: Optimized for both mobile and desktop users.
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <strong style={{ color: "green" }}>Group Chats</strong>: Create and manage group conversations effortlessly.
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <strong style={{ color: "purple" }}>Media Sharing</strong>: Share images, videos, and files seamlessly.
-          </li>
+          </li> */}
         </ul>
       </>
     ),
