@@ -9,7 +9,6 @@ const projects = [
     title: "MERN Stack Quiz App",
     description: (
     <>
-      
   <ul className="text-start lh-sm">
   A MERN stack quiz application where users can take quizzes, submit answers, and view results. Key features:
     <li>
@@ -28,33 +27,8 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200?tab=repositories", // Replace with your GitHub link
     demoLink: "https://jazzy-zabaione-b29249.netlify.app", // Replace with your live demo link
   },
-
-  // {
-  // title: "Chat Application",
-  // description: (
-  //   <>
-     
-  //    <ul className="text-start lh-sm">
-  //   A responsive Chat Application built with MongoDB,Express,React,tailwindCss and Node.js Key features:
-  //   <li>
-  //     <strong style={{ color: "orange" }}>Product Browsing</strong>: Interactive catalog with search and filters.
-  //   </li>
-  //   <li>
-  //     <strong style={{ color: "red" }}>Responsive</strong>: Work In Progress.
-  //   </li>
-  //   <li>
-  //     <strong style={{ color: "blue" }}>Order Management</strong>: Track orders in real time.
-  //   </li>
-   
-  // </ul>
-  //   </>
-  // ),
-  // image: "https://dataoptin.com/wp-content/uploads/2021/05/AdobeStock_223290240-1-scaled.jpeg", // Replace with actual project image
-  // githubLink: "https://github.com/mishrakajal2200/web-order.git", // Replace with your GitHub link
-  // demoLink: "https://web-ordering.netlify.app", // Replace with your live demo link
-  // }
   {
-    title: "Chat Application",
+    title: "AI Chat Application",
     description: (
       <>
         <ul className="text-start lh-sm">
@@ -63,24 +37,64 @@ const projects = [
           <li>
             <strong style={{ color: "orange" }}>Real-time Messaging</strong>: Instantly send and receive messages with WebSockets.
           </li>
-          {/* <li>
-            <strong style={{ color: "red" }}>User Authentication</strong>: Secure login and signup with JWT authentication.
-          </li> */}
-          {/* <li>
-            <strong style={{ color: "blue" }}>Responsive Design</strong>: Optimized for both mobile and desktop users.
-          </li> */}
-          {/* <li>
-            <strong style={{ color: "green" }}>Group Chats</strong>: Create and manage group conversations effortlessly.
-          </li> */}
-          {/* <li>
-            <strong style={{ color: "purple" }}>Media Sharing</strong>: Share images, videos, and files seamlessly.
-          </li> */}
         </ul>
       </>
     ),
     image: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/chat-app.jpg", // Replace with an actual project image URL
-    githubLink: "https://github.com/mishrakajal2200/chat-application.git", // Replace with your GitHub repo link
-    demoLink: "https://chat-application-demo.netlify.app", // Replace with your live demo link
+    githubLink: "https://github.com/mishrakajal2200/AI_chat_app.git", // Replace with your GitHub repo link
+    demoLink: "https://lively-bienenstitch-7ddb35.netlify.app/", // Replace with your live demo link
+  },
+  {
+    title: "E-Commerce Website",
+    description: (
+      <>
+        <ul className="text-start lh-sm">
+          <p className="project-status text-success text-center">
+            ✅ Fully Functional and Ready to Use!
+          </p>
+          A fully functional E-Commerce Website template built with HTML, CSS, JavaScript and Bootstrap. Key features:
+          <li>
+            <strong style={{ color: "blue" }}>🏷️ Product Listings</strong>: Display products dynamically with categories and filters.
+          </li>
+          <li>
+            <strong style={{ color: "green" }}>🛍️ Cart & Checkout</strong>: Add items to cart and proceed to checkout seamlessly.
+          </li>
+          <li>
+            <strong style={{ color: "purple" }}>💳 Payment Integration</strong>: Supports multiple payment gateways.
+          </li>
+          <li>
+            <strong style={{ color: "red" }}>📱 Responsive Design</strong>: Works perfectly on all screen sizes.
+          </li>
+        </ul>
+      </>
+    ),
+    image: "https://www.wedowebapps.ca/wp-content/uploads/2021/04/Advantages-of-e-commerce-100.jpg", // Replace with an actual project image URL
+    githubLink: "https://github.com/mishrakajal2200/web-order.git", // Replace with your GitHub repo link
+    demoLink: "https://web-ordering.netlify.app/", // Replace with your live demo link
+  },
+  {
+    title: "Website Templates Collection",
+    description: (
+      <>
+        <ul className="text-start lh-sm">
+          <p className="project-status text-primary text-center">
+            🎨 Collection of Responsive Web Templates!
+          </p>
+          A set of professionally designed website templates built using **HTML, CSS, JavaScript, and EJS**. These templates can be easily customized and integrated into various projects. Key features:
+          <li>
+            <strong style={{ color: "green" }}>🖌️ Modern UI/UX</strong>: Designed with a clean and intuitive user experience.
+          </li>
+          <li>
+            <strong style={{ color: "purple" }}>💡 Dynamic EJS Templating</strong>: Server-side rendering with EJS for reusable components.
+          </li>
+         
+         
+        </ul>
+      </>
+    ),
+    image: "https://www.shutterstock.com/image-vector/abstract-curve-shape-on-blue-600nw-2288072613.jpg", // Replace with an actual project image URL
+    githubLink: "https://github.com/mishrakajal2200/visiting-cards.git", // Replace with your GitHub repo link
+    demoLink: "https://visiting-cards.onrender.com", // Replace with your live demo link
   }
   
 

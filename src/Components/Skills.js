@@ -1,18 +1,28 @@
 
 
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaDatabase, FaServer, FaGitAlt } from 'react-icons/fa';
-import { motion } from 'framer-motion'; // Import Framer Motion
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNode, FaDatabase, FaServer, FaGitAlt,FaGithub } from 'react-icons/fa';
+import { RiTailwindCssLine } from "react-icons/ri";
+import { SiRedux } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { FaBootstrap } from "react-icons/fa6";
+import { motion } from 'framer-motion'; 
 
 const skills = [
   { name: "HTML", percentage: 100, color: "bg-danger", icon: <FaHtml5 size={30} /> },
   { name: "CSS", percentage: 100, color: "bg-primary", icon: <FaCss3Alt size={30} /> },
   { name: "JavaScript", percentage: 85, color: "bg-warning", icon: <FaJs size={30} /> },
   { name: "React", percentage: 95, color: "bg-info", icon: <FaReact size={30} /> },
+  { name: "Redux", percentage: 60, color: "bg-info", icon: <SiRedux  size={30} /> },
+  { name: "Framer Motion", percentage: 40, color: "bg-info", icon: <TbBrandFramerMotion   size={30} /> },
   { name: "Node.js", percentage: 90, color: "bg-success", icon: <FaNode size={30} /> },
   { name: "MongoDB", percentage: 100, color: "bg-teal", icon: <FaDatabase size={30} /> },
   { name: "Express.js", percentage: 95, color: "bg-secondary", icon: <FaServer size={30} /> },
-  { name: "Git", percentage: 95, color: "bg-success", icon: <FaGitAlt size={30} /> }
+  { name: "Git", percentage: 95, color: "bg-secondary", icon: <FaGitAlt size={30} /> },
+  { name: "Github", percentage: 95, color: "bg-secondary", icon: <FaGithub size={30} /> },
+  { name: "TailwindCSS", percentage: 70, color: "bg-info", icon: <RiTailwindCssLine size={30} /> },
+  { name: "Bootstrap", percentage: 70, color: "bg-primary", icon: <FaBootstrap  size={30} /> },
+
 ];
 
 const Skills = () => {
