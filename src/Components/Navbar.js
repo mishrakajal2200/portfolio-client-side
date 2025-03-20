@@ -45,7 +45,7 @@ function Navbar() {
               <>
                 {/* Links available to authenticated users */}
                 <li className="nav-item home">
-                  <Link to="/home" className="nav-link text-white">
+                  <Link to="/" className="nav-link text-white">
                     Home
                   </Link>
                 </li>
