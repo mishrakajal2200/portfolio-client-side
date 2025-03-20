@@ -35,12 +35,11 @@ function AppContent({ sectionAnimation }) {
       {/* Routes for each section */}
       <motion.div className="content" variants={sectionAnimation} initial="hidden" animate="visible">
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
-         
         </Routes>
       </motion.div>
     </div>

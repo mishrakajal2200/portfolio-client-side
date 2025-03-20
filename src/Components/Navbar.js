@@ -17,7 +17,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container-fluid">
         {/* Logo */}
-        <Link to="/home" className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           Kajal's Portfolio
         </Link>
 
