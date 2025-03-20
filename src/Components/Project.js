@@ -72,6 +72,7 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200/web-order.git", // Replace with your GitHub repo link
     demoLink: "https://web-ordering.netlify.app/", // Replace with your live demo link
   },
+
   {
     title: "Website Templates Collection",
     description: (
@@ -95,9 +96,34 @@ const projects = [
     image: "https://www.shutterstock.com/image-vector/abstract-curve-shape-on-blue-600nw-2288072613.jpg", // Replace with an actual project image URL
     githubLink: "https://github.com/mishrakajal2200/visiting-cards.git", // Replace with your GitHub repo link
     demoLink: "https://visiting-cards.onrender.com", // Replace with your live demo link
-  }
+  },
   
+  {
+    title: "MemeVerse",
+    description: (
+    <>
+  <ul className="text-start lh-sm">
+  MemeVerse is a highly interactive multi-page platform where users can explore, upload, and engage with memes through dynamic features, AI-generated captions, and a seamless UI/UX experience.
+    <li>
+      <strong style={{ color: "teal" }}>Responsive Design</strong>: Optimized for desktop and mobile.
+    </li>
+    <li>
+  <strong style={{ color: "blue" }}>🎭 Meme Explorer</strong>: Browse trending, new, and classic memes with infinite scrolling and filters.
+</li>
+<li>
+  <strong style={{ color: "green" }}>🖼️ Meme Upload</strong>: Upload images/GIFs, add captions, and generate AI-based meme texts.
+</li>
+<li>
+  <strong style={{ color: "purple" }}>❤️ Like & Comment</strong>: Engage with memes through likes, comments, and share options.
+</li>
 
+  </ul>
+    </>
+  ),
+    image: "https://yehaindia.com/wp-content/uploads/2020/07/Memes-feature-364x205.png",// Replace with actual project image
+    githubLink: "https://github.com/mishrakajal2200/memeProject.git", // Replace with your GitHub link
+    demoLink: "https://celadon-crostata-92df86.netlify.app/", // Replace with your live demo link
+  },
 ];
 
 const Project = () => {
