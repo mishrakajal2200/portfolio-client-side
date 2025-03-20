@@ -1,26 +1,23 @@
 
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { Link} from "react-router-dom"; // Import useNavigate for navigation
 import { useAuth } from "../context/AuthContext"; // Import authentication context
 import "./navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { authData, logout } = useAuth(); // Access auth state and logout function
-  const navigate = useNavigate(); // For programmatic navigation
+  const { authData } = useAuth(); // Access auth state and logout function
+  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleLogout = () => {
-    logout(); // Update auth state
-    navigate("/login"); // Redirect to login page
-  };
+  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
       <div className="container-fluid">
         {/* Logo */}
-        <Link to="/" className="navbar-brand">
+        <Link to="/home" className="navbar-brand">
           Kajal's Portfolio
         </Link>
 
@@ -72,15 +69,7 @@ function Navbar() {
                     Skills
                   </Link>
                 </li>
-                {/* Logout button */}
-                <li className="nav-item">
-                  <button
-                    onClick={handleLogout}
-                    className="btn btn-secondary ms-3"
-                  >
-                    Logout
-                  </button>
-                </li>
+                
               </>
             )}
           </ul>
