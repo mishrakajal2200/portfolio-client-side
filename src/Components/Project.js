@@ -94,27 +94,33 @@ const Project = () => {
       {projects.map((project, index) => (
         <motion.div
           key={index}
-          className="col-md-6 mb-4 d-flex" // force equal height columns
+          className="col-md-6 col-lg-4 mb-4 d-flex"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: index * 0.3 }}
         >
           <div
             className="project-card shadow-lg rounded d-flex flex-column w-100"
-            style={{ height: "500px" }} // fixed card height
+            style={{
+              height: "100%",          // makes it responsive inside column
+              minHeight: "500px",      // fixed minimum height
+              overflow: "hidden"       // prevents overflow of inner content
+            }}
           >
             <img
               src={project.image}
               alt={project.title}
               className="img-fluid rounded-top"
-              style={{ height: "240px", objectFit: "cover" }} // consistent image height
+              style={{ height: "240px", objectFit: "cover" }}
             />
             <div className="p-3 d-flex flex-column justify-content-between flex-grow-1">
-              <div>
+              <div className="mb-3">
                 <h4 className="text-dark">{project.title}</h4>
-                <p className="text-dark">{project.description}</p>
+                <p className="text-dark" style={{ maxHeight: "100px", overflowY: "auto" }}>
+                  {project.description}
+                </p>
               </div>
-              <div className="d-flex justify-content-between mt-3">
+              <div className="d-flex justify-content-between">
                 <motion.a
                   href={project.githubLink}
                   target="_blank"
