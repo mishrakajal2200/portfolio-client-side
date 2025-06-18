@@ -27,50 +27,14 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200?tab=repositories", // Replace with your GitHub link
     demoLink: "https://jazzy-zabaione-b29249.netlify.app", // Replace with your live demo link
   },
-  {
-    title: "E-Commerce Website",
-    description: (
-      <>
-        <div className="text-start lh-sm">
-  <p className="project-status text-danger text-center">
-    🚧 Currently under development. Stay tuned for updates!
-  </p>
-  <p>
-    A real-time E-commerce Website built with MongoDB, Express, React, TailwindCSS, and Node.js. Key features include:
-  </p>
-  <ul className="list-disc ms-4">
-    <li>
-      <strong className="text-orange-500">User Authentication</strong>: Secure login/signup using JWT-based authentication.
-    </li>
-    <li>
-      <strong className="text-orange-500">Product Management</strong>: Admins can add, edit, or remove products.
-    </li>
-    <li>
-      <strong className="text-orange-500">Shopping Cart</strong>: Add to cart, update quantity, and manage items.
-    </li>
-    <li>
-      <strong className="text-orange-500">Order Tracking</strong>: Users can view order history and track statuses.
-    </li>
-    <li>
-      <strong className="text-orange-500">Responsive Design</strong>: Fully optimized for mobile, tablet, and desktop using Tailwind CSS.
-    </li>
-  </ul>
-</div>
-
-      </>
-    ),
-    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Feasebuzz.in%2Fexplainers%2Fecommerce%2Fwhat-is-ecommerce-and-how-to-do-online-sales%2F&psig=AOvVaw2qaadrNZdqBHxgArua9_ID&ust=1750296511378000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDmuK73-o0DFQAAAAAdAAAAABAE", // Replace with an actual project image URL
-    githubLink: "https://github.com/mishrakajal2200?tab=repositories", // Replace with your GitHub repo link
-    demoLink: "https://www.gsienterprises.com", // Replace with your live demo link
-  },
-
+  
   {
     title: "E-Commerce Website",
     description: (
       <>
         <ul className="text-start lh-sm">
           <p className="project-status text-success text-center">
-            ✅ Fully Functional and Ready to Use!
+           🚧 This E-commerce website is currently under active development. New features are being added regularly. Stay tuned!
           </p>
           A fully functional E-Commerce Website template built with HTML, CSS, JavaScript and Bootstrap. Key features:
           <li>
@@ -91,31 +55,6 @@ const projects = [
     image: "https://www.wedowebapps.ca/wp-content/uploads/2021/04/Advantages-of-e-commerce-100.jpg", // Replace with an actual project image URL
     githubLink: "https://github.com/mishrakajal2200/portfolio-client-side", // Replace with your GitHub repo link
     demoLink: "https://www.gsienterprises.com", // Replace with your live demo link
-  },
-
-  {
-    title: "Website Templates Collection",
-    description: (
-      <>
-        <ul className="text-start lh-sm">
-          <p className="project-status text-primary text-center">
-            🎨 Collection of Responsive Web Templates!
-          </p>
-          A set of professionally designed website templates built using **HTML, CSS, JavaScript, and EJS**. These templates can be easily customized and integrated into various projects. Key features:
-          <li>
-            <strong style={{ color: "green" }}>🖌️ Modern UI/UX</strong>: Designed with a clean and intuitive user experience.
-          </li>
-          <li>
-            <strong style={{ color: "purple" }}>💡 Dynamic EJS Templating</strong>: Server-side rendering with EJS for reusable components.
-          </li>
-         
-         
-        </ul>
-      </>
-    ),
-    image: "https://www.shutterstock.com/image-vector/abstract-curve-shape-on-blue-600nw-2288072613.jpg", // Replace with an actual project image URL
-    githubLink: "https://github.com/mishrakajal2200/visiting-cards.git", // Replace with your GitHub repo link
-    demoLink: "https://visiting-cards.onrender.com", // Replace with your live demo link
   },
   
   {
