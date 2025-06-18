@@ -89,8 +89,8 @@ const projects = [
       </>
     ),
     image: "https://www.wedowebapps.ca/wp-content/uploads/2021/04/Advantages-of-e-commerce-100.jpg", // Replace with an actual project image URL
-    githubLink: "https://github.com/mishrakajal2200/web-order.git", // Replace with your GitHub repo link
-    demoLink: "https://web-ordering.netlify.app/", // Replace with your live demo link
+    githubLink: "https://github.com/mishrakajal2200/portfolio-client-side", // Replace with your GitHub repo link
+    demoLink: "https://www.gsienterprises.com", // Replace with your live demo link
   },
 
   {
