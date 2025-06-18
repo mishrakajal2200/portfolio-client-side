@@ -36,7 +36,7 @@ const projects = [
           <p className="project-status text-success text-center">
            🚧 This E-commerce website is currently under active development. New features are being added regularly. Stay tuned!
           </p>
-          A fully functional E-Commerce Website template built with HTML, CSS, JavaScript and Bootstrap. Key features:
+         A fully functional E-Commerce website template built using the MERN stack (MongoDB, Express, React, and Node.js). This project is designed with scalability and performance in mind, offering a seamless user experience from browsing to checkout.
           <li>
             <strong style={{ color: "blue" }}>🏷️ Product Listings</strong>: Display products dynamically with categories and filters.
           </li>
