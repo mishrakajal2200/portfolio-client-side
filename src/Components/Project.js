@@ -28,22 +28,42 @@ const projects = [
     demoLink: "https://jazzy-zabaione-b29249.netlify.app", // Replace with your live demo link
   },
   {
-    title: "AI Chat Application",
+    title: "E-Commerce Website",
     description: (
       <>
-        <ul className="text-start lh-sm">
-        <p className="project-status text-danger text-center">🚧 Currently under development. Stay tuned for updates!</p>
-          A real-time Chat Application built with MongoDB, Express, React, TailwindCSS, and Node.js. Key features:
-          <li>
-            <strong style={{ color: "orange" }}>Real-time Messaging</strong>: Instantly send and receive messages with WebSockets.
-          </li>
-        </ul>
+        <div className="text-start lh-sm">
+  <p className="project-status text-danger text-center">
+    🚧 Currently under development. Stay tuned for updates!
+  </p>
+  <p>
+    A real-time E-commerce Website built with MongoDB, Express, React, TailwindCSS, and Node.js. Key features include:
+  </p>
+  <ul className="list-disc ms-4">
+    <li>
+      <strong className="text-orange-500">User Authentication</strong>: Secure login/signup using JWT-based authentication.
+    </li>
+    <li>
+      <strong className="text-orange-500">Product Management</strong>: Admins can add, edit, or remove products.
+    </li>
+    <li>
+      <strong className="text-orange-500">Shopping Cart</strong>: Add to cart, update quantity, and manage items.
+    </li>
+    <li>
+      <strong className="text-orange-500">Order Tracking</strong>: Users can view order history and track statuses.
+    </li>
+    <li>
+      <strong className="text-orange-500">Responsive Design</strong>: Fully optimized for mobile, tablet, and desktop using Tailwind CSS.
+    </li>
+  </ul>
+</div>
+
       </>
     ),
-    image: "https://www.mindinventory.com/blog/wp-content/uploads/2022/10/chat-app.jpg", // Replace with an actual project image URL
-    githubLink: "https://github.com/mishrakajal2200/AI_chat_app.git", // Replace with your GitHub repo link
-    demoLink: "https://lively-bienenstitch-7ddb35.netlify.app/", // Replace with your live demo link
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Feasebuzz.in%2Fexplainers%2Fecommerce%2Fwhat-is-ecommerce-and-how-to-do-online-sales%2F&psig=AOvVaw2qaadrNZdqBHxgArua9_ID&ust=1750296511378000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDmuK73-o0DFQAAAAAdAAAAABAE", // Replace with an actual project image URL
+    githubLink: "https://github.com/mishrakajal2200?tab=repositories", // Replace with your GitHub repo link
+    demoLink: "https://www.gsienterprises.com", // Replace with your live demo link
   },
+
   {
     title: "E-Commerce Website",
     description: (
