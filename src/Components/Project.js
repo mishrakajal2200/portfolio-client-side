@@ -88,51 +88,62 @@ const projects = [
 const Project = () => {
   return (
     <section id="projects" className="bg-light py-5 min-vh-100">
-      <div className="container text-center mt-5">
-        <h2 className="text-primary mb-5">Recent Work</h2>
-        <div className="row">
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              className="col-md-6 mb-4"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.3 }}
-            >
-              <div className="project-card shadow-lg rounded min-vh-40">
-                <img src={project.image} alt={project.title} className="img-fluid col-lg-12 rounded-top text-dark" style={{ height: "240px", objectFit: "cover" }} />
-                <div className="p-3">
-                  <h4 className="text-dark">{project.title}</h4>
-                  <p className='text-dark'>{project.description}</p>
-                  <div className="d-flex justify-content-between mt-3">
-                    <motion.a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-dark"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <FaGithub size={20} className="me-2" />
-                      GitHub
-                    </motion.a>
-                    <motion.a
-                      href={project.demoLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-success"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <FaExternalLinkAlt size={20} className="me-2" />
-                      Live Demo
-                    </motion.a>
-                  </div>
-                </div>
+  <div className="container text-center mt-5">
+    <h2 className="text-primary mb-5">Recent Work</h2>
+    <div className="row">
+      {projects.map((project, index) => (
+        <motion.div
+          key={index}
+          className="col-md-6 mb-4 d-flex" // force equal height columns
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: index * 0.3 }}
+        >
+          <div
+            className="project-card shadow-lg rounded d-flex flex-column w-100"
+            style={{ height: "500px" }} // fixed card height
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="img-fluid rounded-top"
+              style={{ height: "240px", objectFit: "cover" }} // consistent image height
+            />
+            <div className="p-3 d-flex flex-column justify-content-between flex-grow-1">
+              <div>
+                <h4 className="text-dark">{project.title}</h4>
+                <p className="text-dark">{project.description}</p>
               </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
+              <div className="d-flex justify-content-between mt-3">
+                <motion.a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <FaGithub size={20} className="me-2" />
+                  GitHub
+                </motion.a>
+                <motion.a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success"
+                  whileHover={{ scale: 1.1 }}
+                >
+                  <FaExternalLinkAlt size={20} className="me-2" />
+                  Live Demo
+                </motion.a>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
+
   );
 };
 
