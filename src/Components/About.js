@@ -49,7 +49,7 @@ const About = () => {
 <div className="d-flex justify-content-center mt-3">
   <div className="col-12 col-md-8 text-center">
     <h3 className="text-primary mb-4">Key Skills</h3>
-    <div className="mx-auto" style={{ maxWidth: "600px" }}>
+    <div className="mx-auto text-center" style={{ maxWidth: "600px" }}>
       <ul className="list-unstyled text-start">
         <li className="mb-2">
           <strong className="text-danger">Frontend:</strong> React, Redux, Tailwind CSS, Material-UI
