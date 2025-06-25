@@ -191,7 +191,7 @@ const projects = [
       </ul>
     ),
     image: "https://www.wedowebapps.ca/wp-content/uploads/2021/04/Advantages-of-e-commerce-100.jpg",
-    githubLink: "https://github.com/mishrakajal2200/portfolio-client-side",
+    githubLink: "https://github.com/mishrakajal2200/GSI-BACKEND.git",
     demoLink: "https://www.gsienterprises.com",
   },
   {
