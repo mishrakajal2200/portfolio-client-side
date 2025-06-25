@@ -48,7 +48,7 @@ const About = () => {
 <div className="d-flex justify-content-center mt-3">
   <div className="col-12 col-md-8">
     <h3 className="text-center text-primary">Key Skills</h3>
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center items-center">
       <ul className="list-unstyled text-start" style={{ maxWidth: "600px", width: "100%" }}>
         <li><strong className="text-danger">Frontend:</strong> React, Redux, Tailwind CSS, Material-UI</li>
         <li><strong className="text-danger">Backend:</strong> Node.js, Express.js, REST APIs</li>
