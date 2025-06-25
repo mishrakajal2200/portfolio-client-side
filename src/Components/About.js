@@ -45,21 +45,21 @@ const About = () => {
    
   </div>
 </div> */}
-<div className="d-flex justify-content-center text-center mt-3">
+<div className="d-flex justify-content-center mt-3">
   <div className="col-12 col-md-8">
     <h3 className="text-center text-primary">Key Skills</h3>
-    <ul className="list-unstyled text-start px-3">
-      <li><strong className="text-danger">Frontend:</strong> React, Redux, Tailwind CSS, Material-UI</li>
-      <li><strong className="text-danger">Backend:</strong> Node.js, Express.js, REST APIs</li>
-      <li><strong className="text-danger">Database:</strong> MongoDB</li>
-      <li><strong className="text-danger">API Integrations:</strong> Worked with third-party APIs to enhance functionality</li>
-      <li><strong className="text-danger">Version Control:</strong> Git, GitHub</li>
-      <li><strong className="text-danger">Deployment:</strong> Vercel, Netlify, Heroku, Cyclic.sh</li>
-    </ul>
+    <div className="d-flex justify-content-center">
+      <ul className="list-unstyled text-start" style={{ maxWidth: "600px", width: "100%" }}>
+        <li><strong className="text-danger">Frontend:</strong> React, Redux, Tailwind CSS, Material-UI</li>
+        <li><strong className="text-danger">Backend:</strong> Node.js, Express.js, REST APIs</li>
+        <li><strong className="text-danger">Database:</strong> MongoDB</li>
+        <li><strong className="text-danger">API Integrations:</strong> Worked with third-party APIs to enhance functionality</li>
+        <li><strong className="text-danger">Version Control:</strong> Git, GitHub</li>
+        <li><strong className="text-danger">Deployment:</strong> Vercel, Netlify, Heroku, Cyclic.sh</li>
+      </ul>
+    </div>
   </div>
 </div>
-
-
       {/* Projects Section */}
       <div className="d-flex justify-content-center mt-3">
         <div className="col-12 col-md-8">
