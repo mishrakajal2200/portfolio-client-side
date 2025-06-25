@@ -45,7 +45,7 @@ const About = () => {
    
   </div>
 </div> */}
-<div className="d-flex justify-content-center mt-3">
+<div className="d-flex justify-content-center text-center mt-3">
   <div className="col-12 col-md-8">
     <h3 className="text-center text-primary">Key Skills</h3>
     <ul className="list-unstyled text-start px-3">
