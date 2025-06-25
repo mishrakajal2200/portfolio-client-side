@@ -157,6 +157,7 @@
 
 
 
+
 import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
@@ -165,57 +166,77 @@ const projects = [
   {
     title: "MERN Stack Quiz App",
     description: (
-      <>
-        <ul className="list-disc pl-5 text-gray-700 text-sm text-left space-y-1">
-          <li>
-            <strong className="text-blue-600">User Authentication</strong> with <span className="text-green-600">JWT</span> & <span className="text-purple-600">bcryptjs</span>.
-          </li>
-          <li>
-            <strong className="text-orange-500">Twilio API</strong> for WhatsApp quiz results.
-          </li>
-          <li>
-            <strong className="text-teal-600">Responsive UI</strong> for mobile & desktop.
-          </li>
-        </ul>
-      </>
+      <ul className="list-disc space-y-2 pl-5 text-left text-gray-700 text-sm">
+        <li><span className="font-bold text-blue-600">Authentication:</span> JWT & bcryptjs secured login.</li>
+        <li><span className="font-bold text-orange-500">Twilio:</span> Sends quiz results via WhatsApp API.</li>
+        <li><span className="font-bold text-teal-600">Responsive:</span> Designed for all screen sizes.</li>
+      </ul>
     ),
     image: "https://t3.ftcdn.net/jpg/00/96/97/90/240_F_96979048_Y3YBHNDut6fhtsf9TT97sU87aQDa10oQ.jpg",
     githubLink: "https://github.com/mishrakajal2200?tab=repositories",
     demoLink: "https://jazzy-zabaione-b29249.netlify.app",
   },
-  // Add your other projects here in same format...
+  {
+    title: "E-Commerce Website",
+    description: (
+      <ul className="list-disc space-y-2 pl-5 text-left text-gray-700 text-sm">
+        <li><span className="text-green-600 font-bold">🛒 Status:</span> Under active development 🚧</li>
+        <li><span className="text-blue-600 font-bold">Products:</span> Dynamic product listings, categories & filters.</li>
+        <li><span className="text-green-600 font-bold">Cart & Checkout:</span> Seamless buying experience.</li>
+        <li><span className="text-purple-600 font-bold">Payments:</span> Multiple gateway support.</li>
+        <li><span className="text-red-600 font-bold">Mobile Friendly:</span> Responsive layout for all devices.</li>
+      </ul>
+    ),
+    image: "https://www.wedowebapps.ca/wp-content/uploads/2021/04/Advantages-of-e-commerce-100.jpg",
+    githubLink: "https://github.com/mishrakajal2200/portfolio-client-side",
+    demoLink: "https://www.gsienterprises.com",
+  },
+  {
+    title: "MemeVerse",
+    description: (
+      <ul className="list-disc space-y-2 pl-5 text-left text-gray-700 text-sm">
+        <li><span className="text-blue-600 font-bold">🎭 Meme Explorer:</span> Infinite scroll with trending filters.</li>
+        <li><span className="text-green-600 font-bold">🖼 Upload:</span> Add memes, generate AI-based captions.</li>
+        <li><span className="text-purple-600 font-bold">❤️ Social:</span> Like, comment, and share functionality.</li>
+        <li><span className="text-teal-600 font-bold">Mobile Ready:</span> Beautiful responsive design.</li>
+      </ul>
+    ),
+    image: "https://yehaindia.com/wp-content/uploads/2020/07/Memes-feature-364x205.png",
+    githubLink: "https://github.com/mishrakajal2200/memeProject.git",
+    demoLink: "https://celadon-crostata-92df86.netlify.app/",
+  },
 ];
 
 const Project = () => {
   return (
-    <section id="projects" className="bg-gradient-to-br from-gray-50 to-gray-200 py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-blue-700 mb-12">🚀 My Projects</h2>
+    <section className="py-16 px-4 bg-gradient-to-br from-white to-gray-100" id="projects">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">🚀 My Projects</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden flex flex-col"
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="bg-white/80 backdrop-blur-md shadow-lg rounded-3xl overflow-hidden flex flex-col transition-transform hover:-translate-y-2"
             >
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
               />
-              <div className="p-5 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">{project.title}</h3>
-                <div className="mb-4">{project.description}</div>
+              <div className="p-6 flex flex-col gap-4">
+                <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
+                <div>{project.description}</div>
 
-                <div className="mt-auto flex justify-between">
+                <div className="flex justify-between mt-4">
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-medium text-white bg-gray-800 px-4 py-2 rounded hover:bg-gray-700 transition"
+                    className="flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 text-sm"
                   >
                     <FaGithub /> GitHub
                   </a>
@@ -223,7 +244,7 @@ const Project = () => {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-medium text-white bg-green-600 px-4 py-2 rounded hover:bg-green-500 transition"
+                    className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-500 text-sm"
                   >
                     <FaExternalLinkAlt /> Live Demo
                   </a>
@@ -238,3 +259,4 @@ const Project = () => {
 };
 
 export default Project;
+
