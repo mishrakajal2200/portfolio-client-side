@@ -29,7 +29,7 @@ const About = () => {
       </div>
 
       {/* Key Skills Section */}
-      {/* <div className="d-flex justify-content-center mt-3">
+      <div className="d-flex justify-content-center mt-3">
   <div className="col-12 col-md-8">
     <h3 className="text-center text-primary">Key Skills</h3>
     <div className='justify-content-center d-flex'>
@@ -44,35 +44,8 @@ const About = () => {
     </div>
    
   </div>
-</div> */}
-{/* Key Skills Section */}
-<div className="d-flex justify-content-center mt-3">
-  <div className="col-12 col-md-8 text-center">
-    <h3 className="text-primary mb-4">Key Skills</h3>
-    <div className="mx-auto text-center" style={{ maxWidth: "600px" }}>
-      <ul className="list-unstyled text-start">
-        <li className="mb-2">
-          <strong className="text-danger">Frontend:</strong> React, Redux, Tailwind CSS, Material-UI
-        </li>
-        <li className="mb-2">
-          <strong className="text-danger">Backend:</strong> Node.js, Express.js, REST APIs
-        </li>
-        <li className="mb-2">
-          <strong className="text-danger">Database:</strong> MongoDB
-        </li>
-        <li className="mb-2">
-          <strong className="text-danger">API Integrations:</strong> Worked with third-party APIs to enhance functionality
-        </li>
-        <li className="mb-2">
-          <strong className="text-danger">Version Control:</strong> Git, GitHub
-        </li>
-        <li className="mb-2">
-          <strong className="text-danger">Deployment:</strong> Vercel, Netlify, Heroku, Cyclic.sh
-        </li>
-      </ul>
-    </div>
-  </div>
 </div>
+
 
       {/* Projects Section */}
       <div className="d-flex justify-content-center mt-3">
