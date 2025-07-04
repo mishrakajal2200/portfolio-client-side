@@ -8,7 +8,6 @@ const projects = [
     title: "MERN Stack Quiz App",
     description: (
       <ul className="text-start lh-sm">
-        A MERN stack quiz application where users can take quizzes, submit answers, and view results. Key features:
         <li><strong style={{ color: "blue" }}>User Authentication</strong>: Secure with <span style={{ color: "green" }}>JWT</span> and <span style={{ color: "purple" }}>bcryptjs</span>.</li>
         <li><strong style={{ color: "orange" }}>Twilio Integration</strong>: Sends quiz results via <span style={{ color: "red" }}>WhatsApp API</span>.</li>
         <li><strong style={{ color: "teal" }}>Responsive Design</strong>: Optimized for desktop and mobile.</li>
@@ -23,8 +22,6 @@ const projects = [
     description: (
       <ul className="text-start lh-sm">
         <p className="text-success">🚧 This E-commerce website is currently under active development.</p>
-        A fully functional E-Commerce website using MERN. Features:
-        <li><strong style={{ color: "blue" }}>🏷️ Product Listings</strong>: Filterable product categories.</li>
         <li><strong style={{ color: "green" }}>🛍️ Cart & Checkout</strong>: Smooth shopping flow.</li>
         <li><strong style={{ color: "purple" }}>💳 Payment Integration</strong>: Supports multiple gateways.</li>
         <li><strong style={{ color: "red" }}>📱 Responsive Design</strong>: Fully mobile friendly.</li>
@@ -38,10 +35,8 @@ const projects = [
     title: "MemeVerse",
     description: (
       <ul className="text-start lh-sm">
-        MemeVerse is an interactive meme sharing site. Features:
         <li><strong style={{ color: "teal" }}>Responsive Design</strong>: Optimized for all devices.</li>
         <li><strong style={{ color: "blue" }}>🎭 Meme Explorer</strong>: Trending memes with infinite scroll.</li>
-        <li><strong style={{ color: "green" }}>🖼️ Upload</strong>: Upload memes with AI captions.</li>
         <li><strong style={{ color: "purple" }}>❤️ Like & Comment</strong>: Engage socially with memes.</li>
       </ul>
     ),
