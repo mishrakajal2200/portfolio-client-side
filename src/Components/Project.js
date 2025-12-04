@@ -40,6 +40,10 @@ const projects = [
         🤖 This AI-powered Tech-Debt Eliminator scans your codebase, detects issues, and auto-fixes them.
       </p>
 
+      <p className="text-info">
+        📅 <strong>Project Timeline</strong>: Started on <strong>Dec 4, 2025</strong> — Expected Completion <strong>Dec 20, 2025</strong>.
+      </p>
+
       <li>
         <strong style={{ color: "green" }}>🧠 Advanced AI Analysis</strong>:
         Detects tech debt, anti-patterns, poor architecture, and performance bottlenecks.
@@ -82,10 +86,11 @@ const projects = [
     </ul>
   ),
   image:
-    "https://cdn.analyticsvidhya.com/wp-content/uploads/2023/06/ai-in-software-development.jpg",
-  githubLink: "https://github.com/your-username/ai-tech-debt",
-  demoLink: "https://your-demo-link.com",
+    "../logo (2).png",
+  githubLink: "not available now",
+  demoLink: "not available now",
 }
+
 
  
 ];
