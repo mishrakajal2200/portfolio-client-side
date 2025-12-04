@@ -31,6 +31,62 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200/GSI-BACKEND.git",
     demoLink: "https://www.gsienterprises.com",
   },
+
+  {
+  title: "AI Tech-Debt Eliminator",
+  description: (
+    <ul className="text-start lh-sm">
+      <p className="text-primary">
+        🤖 This AI-powered Tech-Debt Eliminator scans your codebase, detects issues, and auto-fixes them.
+      </p>
+
+      <li>
+        <strong style={{ color: "green" }}>🧠 Advanced AI Analysis</strong>:
+        Detects tech debt, anti-patterns, poor architecture, and performance bottlenecks.
+      </li>
+
+      <li>
+        <strong style={{ color: "purple" }}>⚡ Auto-Fix Generator</strong>:
+        Creates optimized code patches with explanations and best-practice refactoring.
+      </li>
+
+      <li>
+        <strong style={{ color: "orange" }}>📦 Codebase Upload System</strong>:
+        Upload ZIP or GitHub repo link for full project scanning.
+      </li>
+
+      <li>
+        <strong style={{ color: "red" }}>🔐 Secure Authentication</strong>:
+        JWT-based security with admin/user roles and protected routes.
+      </li>
+
+      <li>
+        <strong style={{ color: "blue" }}>📊 AI Tech-Debt Dashboard</strong>:
+        Visualizes risk levels, duplicate code, vulnerabilities & performance issues.
+      </li>
+
+      <li>
+        <strong style={{ color: "teal" }}>💬 AI Chat Assistant</strong>:
+        Ask AI to explain files, optimize functions, or auto-refactor code live.
+      </li>
+
+      <li>
+        <strong style={{ color: "brown" }}>⚙️ MERN + AI Architecture</strong>:
+        Node + Express backend, React + Tailwind UI, MongoDB for storage, OpenAI engine integration.
+      </li>
+
+      <li>
+        <strong style={{ color: "pink" }}>📱 Responsive UI</strong>:
+        Fully optimized dashboard and chat interface for all devices.
+      </li>
+    </ul>
+  ),
+  image:
+    "https://cdn.analyticsvidhya.com/wp-content/uploads/2023/06/ai-in-software-development.jpg",
+  githubLink: "https://github.com/your-username/ai-tech-debt",
+  demoLink: "https://your-demo-link.com",
+}
+
  
 ];
 
