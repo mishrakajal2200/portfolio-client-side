@@ -86,7 +86,7 @@ const projects = [
     </ul>
   ),
   image:
-    "../logo (2).png",
+    "https://chatgpt.com/backend-api/estuary/content?id=file_00000000ad2c7206bf2b653085c34295&ts=490233&p=fs&cid=1&sig=15f8d50d0ce1861b09331e2d93937e3a74256d5d6ed69e2ff585b8bf3a56fa3c&v=0",
   githubLink: "not available now",
   demoLink: "not available now",
 }
