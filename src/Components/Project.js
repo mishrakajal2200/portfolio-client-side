@@ -31,19 +31,7 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200/GSI-BACKEND.git",
     demoLink: "https://www.gsienterprises.com",
   },
-  {
-    title: "MemeVerse",
-    description: (
-      <ul className="text-start lh-sm">
-        <li><strong style={{ color: "teal" }}>Responsive Design</strong>: Optimized for all devices.</li>
-        <li><strong style={{ color: "blue" }}>🎭 Meme Explorer</strong>: Trending memes with infinite scroll.</li>
-        <li><strong style={{ color: "purple" }}>❤️ Like & Comment</strong>: Engage socially with memes.</li>
-      </ul>
-    ),
-    image: "https://yehaindia.com/wp-content/uploads/2020/07/Memes-feature-364x205.png",
-    githubLink: "https://github.com/mishrakajal2200/memeProject.git",
-    demoLink: "https://celadon-crostata-92df86.netlify.app/",
-  },
+ 
 ];
 
 const Project = () => {
