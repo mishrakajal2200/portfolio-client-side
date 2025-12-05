@@ -86,7 +86,7 @@ const projects = [
     </ul>
   ),
   image:
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fartificial-intelligence-logo&psig=AOvVaw0t7XacS1hFxz2R8R6ZJFfn&ust=1764930172994000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCOjK5JXppJEDFQAAAAAdAAAAABAE",
+    "https://www.shutterstock.com/image-vector/artificial-intelligence-circuit-line-style-600nw-2326615941.jpg",
   githubLink: "not available now",
   demoLink: "not available now",
 }
