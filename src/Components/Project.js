@@ -31,7 +31,6 @@ const projects = [
     githubLink: "https://github.com/mishrakajal2200/GSI-BACKEND.git",
     demoLink: "https://www.gsienterprises.com",
   },
-
   {
   title: "AI Tech-Debt Eliminator",
   description: (
@@ -88,11 +87,8 @@ const projects = [
   image:
     "https://www.shutterstock.com/image-vector/artificial-intelligence-circuit-line-style-600nw-2326615941.jpg",
   githubLink: "not available now",
-  demoLink: "not available now",
-}
-
-
- 
+  demoLink: "https://jocular-palmier-0915c8.netlify.app/",
+} 
 ];
 
 const Project = () => {

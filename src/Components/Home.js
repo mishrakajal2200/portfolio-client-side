@@ -116,84 +116,93 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import personalImage from "./kajal.jpg";
-import './Home.css';
-
-const roles = [
-  "Full Stack MERN Developer",
-  "React Frontend Specialist",
-  "Node.js Backend Developer",
-];
 
 function Home() {
   return (
-    <div className="min-vh-100 d-flex align-items-center bg-gradient">
-      <div className="container">
-        <div className="row align-items-center">
+    <div className="min-h-screen bg-neutral-900 text-white flex items-center">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* LEFT CONTENT */}
           <motion.div
-            className="col-lg-6 text-white"
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="badge bg-primary mb-3 px-3 py-2">
-              Available for Remote Opportunities
+            <span className="inline-block mb-4 px-4 py-2 text-sm rounded-full bg-neutral-800 text-neutral-300">
+              Open to Remote Opportunities
             </span>
 
-            <h1 className="display-4 fw-bold mt-3">
-              Hi, I’m <span className="text-primary">Kajal Mishra</span>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+              Hi, I’m{" "}
+              <span className="text-blue-500">Kajal Mishra</span>
             </h1>
 
-            <motion.h2
-              className="fw-semibold mt-3 text-light"
-              animate={{ opacity: [0, 1, 0] }}
-              transition={{ repeat: Infinity, duration: 3 }}
-            >
-              {roles[0]}
-            </motion.h2>
+            <h2 className="mt-4 text-xl md:text-2xl font-medium text-neutral-300">
+              Senior MERN Stack Developer
+            </h2>
 
-            <p className="mt-4 text-light opacity-75">
-              I build scalable, high-performance web applications using the
-              MERN stack. With 2+ years of hands-on experience, I focus on
-              clean architecture, optimized APIs, and intuitive user
-              experiences.
+            <p className="mt-6 text-neutral-400 max-w-xl leading-relaxed">
+              I design and build scalable, high-performance web applications
+              using React, Node.js, Express, and MongoDB. With 2+ years of
+              professional experience, I focus on clean UI, efficient APIs,
+              and maintainable architecture.
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="d-flex gap-3 mt-4">
-              <Link to="/projects" className="btn btn-primary btn-lg">
+            <div className="flex flex-wrap gap-4 mt-8">
+              <Link
+                to="/projects"
+                className="px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-700 transition font-medium"
+              >
                 View Projects
               </Link>
-              <Link to="/contact" className="btn btn-outline-light btn-lg">
-                Hire Me
+
+              <Link
+                to="/contact"
+                className="px-6 py-3 rounded-md border border-neutral-600 hover:border-neutral-400 transition font-medium"
+              >
+                Contact Me
               </Link>
             </div>
 
-            {/* SOCIALS */}
-            <div className="d-flex gap-4 mt-4">
-              <a href="https://github.com/mishrakajal2200" target="_blank" rel="noreferrer">
-                <FaGithub size={28} />
+            {/* SOCIAL LINKS */}
+            <div className="flex items-center gap-6 mt-8 text-neutral-400">
+              <a
+                href="https://github.com/mishrakajal2200"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition"
+              >
+                <FaGithub size={26} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <FaLinkedin size={28} />
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition"
+              >
+                <FaLinkedin size={26} />
               </a>
             </div>
           </motion.div>
 
           {/* RIGHT IMAGE */}
           <motion.div
-            className="col-lg-6 d-flex justify-content-center mt-5 mt-lg-0"
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
+            className="flex justify-center"
           >
-            <div className="profile-wrapper">
-              <img
-                src={personalImage}
-                alt="Kajal Mishra"
-                className="profile-img"
-              />
+            <div className="relative">
+              <div className="w-72 h-72 rounded-full bg-neutral-800 flex items-center justify-center">
+                <img
+                  src={personalImage}
+                  alt="Kajal Mishra"
+                  className="w-64 h-64 rounded-full object-cover"
+                />
+              </div>
             </div>
           </motion.div>
 
