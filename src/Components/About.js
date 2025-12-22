@@ -82,7 +82,7 @@ const About = () => {
       
       {/* PAGE TITLE */}
       <div className="text-center mb-5">
-        <h1 className="text-primary fw-bold">About Me</h1>
+        <h1 className="text-primary fw-bold mt-5">About Me</h1>
         <p className="text-secondary">
           Get to know me, my skills, and what I love building
         </p>

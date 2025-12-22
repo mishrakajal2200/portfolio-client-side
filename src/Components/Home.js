@@ -20,20 +20,23 @@ function Home() {
   };
 
   return (
-    <div className="container-fluid min-vh-100 d-flex align-items-center bg-dark px-3 px-md-5">
+    // ✅ FIX: pt-5 for mobile navbar, pt-lg-0 for desktop
+    <div className="container-fluid min-vh-100 d-flex align-items-center bg-dark px-3 px-md-5 pt-5 pt-lg-0">
       <div className="row w-100 align-items-center justify-content-center">
 
         {/* LEFT CONTENT */}
         <div className="col-lg-6 col-md-12 text-center text-lg-start mb-5 mb-lg-0">
           <p
-            className="text-uppercase text-secondary mb-2"
+            className="text-uppercase text-secondary mb-2 pt-5"
             style={{ letterSpacing: "2px", fontSize: "0.85rem" }}
           >
             Welcome
           </p>
 
-          <h1 className="text-white fw-bold mb-3"
-              style={{ fontSize: "clamp(1.8rem, 5vw, 3rem)" }}>
+          <h1
+            className="text-white fw-bold mb-3"
+            style={{ fontSize: "clamp(1.8rem, 5vw, 3rem)" }}
+          >
             Hello, I’m <br />
             <span className="text-primary">Kajal Mishra</span>
           </h1>
