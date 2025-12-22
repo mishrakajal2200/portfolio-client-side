@@ -40,7 +40,7 @@ const projects = [
       </p>
 
       <p className="text-info">
-        📅 <strong>Project Timeline</strong>: Started on <strong>Dec 4, 2025</strong> — Expected Completion <strong>Dec 20, 2025</strong>.
+        📅 <strong>Project Timeline</strong>: Started on <strong>Dec 4, 2025</strong> — Expected Completion <strong>Dec 25, 2025</strong>.
       </p>
 
       <li>
@@ -79,7 +79,7 @@ const projects = [
       </li>
 
       <li>
-        <strong style={{ color: "pink" }}>📱 Responsive UI</strong>:
+        <strong style={{ color: "blue" }}>📱 Responsive UI</strong>:
         Fully optimized dashboard and chat interface for all devices.
       </li>
     </ul>
