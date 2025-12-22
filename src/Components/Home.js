@@ -116,6 +116,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import personalImage from "./kajal.jpg";
+import './Home.css';
 
 const roles = [
   "Full Stack MERN Developer",
